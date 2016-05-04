@@ -1,0 +1,74 @@
+/*
+Theme Name: Abingdon Square Painters
+Theme URI: http://graphpaperpress.com/themes/snaps/
+Template: snaps
+Author: Pea
+Author URI: http://misfist.com
+Description: A custom portfolio theme based on Snaps.
+Version: 1.0.0
+License: GNU General Public License
+License URI: license.txt
+Tags: black, gray, white, dark, light, one-column, two-columns, four-columns, fluid-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, post-formats, threaded-comments, translation-ready, photoblogging
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+
+$color__primary: #ccc;
+$color__accent: #B22F2F;
+$color__foreground: #111;
+$color__background: #fff;
+
+.portfolio-entry-header {
+	background-color: $color__foreground;
+
+	.portfolio-featured-image {}
+	.portfolio-entry-title {}
+}
+
+h2.portfolio-entry-title {
+	font-size: 1em;
+	text-transform: none;
+	font-weight: normal;
+}
+
+.portfolio-entry-meta {
+
+	.project-types {
+		line-height: 1;
+		font-size: 1.5em;
+		font-weight: bold;
+		text-transform: uppercase;
+
+		span {
+			display: none;
+			margin: 0;
+			&:after {
+				content: none;
+			}
+		}
+	}
+}
+
+.portfolio-entry-title + .portfolio-entry-meta {
+	margin-top: .25em;
+}
+
+.listing-item {
+
+	.title {
+		display: block;
+	}
+	.excerpt-dash {
+		display: none;
+	}
+	.excerpt {
+		display: block;
+	}
+
+}
